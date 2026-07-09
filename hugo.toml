@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "http://www.pinode.ccwu.cc"
 languageCode = "zh-CN"
 title = "达默兹导航站"
 theme = "hugo-webstack"
