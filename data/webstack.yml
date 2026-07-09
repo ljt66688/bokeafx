@@ -1,1094 +1,1017 @@
----
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>设计师导航</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* ===== 全局重置 ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-- taxonomy: 常用推荐
-  icon: fa-star
-  links: 
-    - title: YouTube
-      logo: https://www.google.com/s2/favicons?sz=64&domain=www.youtube.com
-      url: https://youtube.com/channel/UCznJBUw3oHOpMFbrF4tcFlg?si=vqBtoeG_oWxUWRmB
-      description: 一个专注于软件安装，科学上网教学的频道！
-    - title: 资源博客
-      qrcode: images/qrcodes/bk.png
-      logo:  images/logos/kjgxa999f-kjgx1fr3l-001.ico
-      url: https://kjgx668.blogspot.com/
-      description: 资源分享，详细图文教程。
-    - title: 全宇宙最便宜的vps
-      logo: images/logos/racknerd.png
-      url: https://my.racknerd.com/aff.php?aff=13491
-      description: 一年仅10.99每月3T流量17G固态硬盘
-    - title: Switch eSIM卡
-      logo: images/logos/Switch.jpg
-      url: https://s.tb.cn/c.0wEMb6
-      description: 让国行手机也有eSIM功能
-    - title: 环球巴士
-      qrcode: 
-      logo: images/logos/HQBS.png
-      url: https://universalbus.cn?s=gB8CJKmJdd
-      description: 流媒体影音账号合租平
-    - title: "万事达虚拟银行卡"
-      url: "https://www.bybit.com/invite?ref=QAM3MOJ"
-      description: "国内usdt消费,支付宝、微信充值，海外消费。"
-    - title: visa虚拟卡
-      qrcode: images/qrcodes/usdt.png
-      logo:
-      url: https://app.pokepay.cc/pages/passport/invitation?r=145892
-      description: usdt套现，国内拼多多消费，支付宝消费
-    - title: IOS (苹果) ID 礼品卡/兑换码
-      logo:  images/logos/5eac6d69dc12980944f98.jpg
-      url: https://app.xintaifree.com?from=5431/
-      description: shadowrocket 小火箭 | quantumult x 圈x | 礼品卡/兑换码 | ChatGPT plus 应有尽有！⏰客服在线时间08:00-23:00
-    - title: Telegram
-      logo: 
-      url: https://t.me/kjgxZY/
-      description: 科技共享资源频道
-    - title: Telegram群组
-      url: https://t.me/+qf_DtRZ90ys2ZDBl/
-      description: 沟通交流，资源分享
-    - title: 接码平台
-      logo:  
-      url: https://hero-sms.com/?ref=489021/
-      description: 购买各国电话号码，用于在社交网络、聊天工具和其他服务中注册。
-    - title: Base64编码解码
-      url: https://99688988.xyz/base64-string-converter/
-      description: 将utf-8能表示的所有字符进行Base64编码加密解密
-    - title: 文叔叔
-      logo: 
-      url: https://www.wenshushu.cn/
-      description: 传临时文件,大文件、永不限速
-    - title: 网络剪贴板
-      logo: 
-      url: https://clipboard.168668520.xyz/
-      description: 提供数据暂存和传送服务
-    - title: UUID生成
-      url: https://99688988.xyz/uuid-generator/
-      description: UUID在线生成
-    - title: 轻抖
-      qrcode: 
-      logo: images/logos/qingdou.jpg
-      url: https://share.qingdouyin.com/app/sub-commission-download/1652420599279?type=&code=EWDJXS/
-      description: 涨粉、引流、工具、选品、自购等一站式服务，总有一款适合你！全网达人都在用。
-    - title: 流量变现
-      logo:  images/logos/rengtuiban.png
-      url: https://dt.bd.cn/#/pages/login/register?invite_code=516557
-      description: 一线的APP推广项目分发和流量变现平台
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+        }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-- taxonomy: 社区咨询
-  icon: fa-regular fa-newspaper
-  links: 
-    - title: 雷锋网
-      logo: images/logos/leiphone.png
-      url: https://www.leiphone.com/
-      description: 人工智能和智能硬件领域的互联网科技媒体
-    - title: 36kr
-      logo: images/logos/36kr.png
-      url: https://36kr.com/
-      description: 创业资讯、科技新闻
-    - title: 数英网
-      logo: images/logos/digitaling.png
-      url: https://www.digitaling.com/
-      description: 数字媒体及职业招聘网站
-    - title: 猎云网
-      logo: images/logos/lieyunwang.png
-      url: https://www.lieyunwang.com/
-      description: 互联网创业项目推荐和创业创新资讯
-    - title: 人人都是产品经理
-      logo: images/logos/woshipm.png
-      url: http://www.woshipm.com/
-      description: 产品经理、产品爱好者学习交流平台
-    - title: 互联网早读课
-      logo: images/logos/zaodula.png
-      url: https://www.zaodula.com/
-      description: 互联网行业深度阅读与学习平台
-    - title: 产品壹佰 
-      logo: images/logos/chanpin100.png
-      url: http://www.chanpin100.com/
-      description: 为产品经理爱好者提供最优质的产品资讯、原创内容和相关视频课程
-    - title: PMCAFF
-      logo: images/logos/pmcaff.png
-      url: http://www.pmcaff.com/
-      description: 中国第一产品经理人气组织，专注于研究互联网产品
-    - title: 爱运营
-      logo: images/logos/iyunying.png
-      url: http://www.iyunying.org/
-      description: 网站运营人员学习交流，专注于网站产品运营管理、淘宝运营。
-    - title: 鸟哥笔记
-      logo: images/logos/niaogebiji.png
-      url: http://www.niaogebiji.com/
-      description: 移动互联网第一干货平台
-    - title: 古田路9号
-      logo: images/logos/gtn9.png
-      url: http://www.gtn9.com/
-      description: 国内专业品牌创意平台
-    - title: 优阁网
-      logo: images/logos/uigreat.png
-      url: http://www.uigreat.com/
-      description: UI设计师学习交流社区
-    
+        /* ===== 顶部导航栏 ===== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(26, 26, 46, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px 0;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
 
-- taxonomy: 灵感采集
-  icon: fa-regular fa-lightbulb
-  list: 
-    - term: 发现产品
-      links:
-        - title: Producthunt
-          logo: images/logos/producthunt.png
-          url: https://www.producthunt.com/
-          description: 发现新鲜有趣的产品
-        - title: NEXT
-          logo: images/logos/NEXT.png
-          url: https://next.36kr.com/posts
-          description: 不错过任何一个新产品
-        - title: 少数派
-          logo: images/logos/sspai.png
-          url: https://sspai.com/
-          description: 高品质数字消费指南
-        - title: 利器
-          logo: images/logos/liqi.png
-          url: https://liqi.io/
-          description: 创造者和他们的工具
-        - title: Today
-          logo: images/logos/today.png
-          url: http://today.itjuzi.com/
-          description: 为身边的新产品喝彩
-        - title: 小众软件
-          logo: images/logos/appinn.png
-          url: https://faxian.appinn.com/
-          description: 在这里发现更多有趣的应用
-      
-    - term: 界面灵感
-      links:
-        - title: Pttrns
-          logo: images/logos/Pttrns.png
-          url: https://www.pttrns.com/
-          description: Check out the finest collection of design patterns, resources, mobile apps and inspiration
-        - title: Collect UI
-          logo: images/logos/CollectUI.png
-          url: http://collectui.com/
-          description: Daily inspiration collected from daily ui archive and beyond.
-        - title: UI uigreat
-          logo: images/logos/uiuigreat.png
-          url: http://ui.uigreat.com/
-          description: APP界面截图参考
-        - title: Android Niceties
-          logo: images/logos/AndroidNiceties.png
-          url: https://androidniceties.tumblr.com/
-          description: A collection of screenshots encompassing some of the most beautiful looking Android apps.
-      
-    - term: 网页灵感
-      links:
-        - title: Awwwards
-          logo: images/logos/awwwards.png
-          url: https://www.awwwards.com/
-          description: Awwwards are the Website Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.
-        - title: CSS Design Awards
-          logo: images/logos/CSSDesignAwards.png
-          url: https://www.cssdesignawards.com/
-          description: Website Awards & Inspiration - CSS Gallery
-        - title: The FWA
-          logo: images/logos/fwa.png
-          url: https://thefwa.com/
-          description: FWA - showcasing innovation every day since 2000
-        - title: Ecommercefolio
-          logo: images/logos/Ecommercefolio.png
-          url: http://www.ecommercefolio.com/
-          description: Only the Best Ecommerce Design Inspiration
-        - title: Lapa
-          logo: images/logos/Lapa.png
-          url: http://www.lapa.ninja/
-          description: The best landing page design inspiration from around the web.
-        - title: Reeoo
-          logo: images/logos/reeoo.png
-          url: http://reeoo.com/
-          description: web design inspiration and website gallery
-        - title: Designmunk
-          logo: images/logos/designmunk.png
-          url: https://designmunk.com/
-          description: Best Homepage Design Inspiration
-        - title: Best Websites Gallery
-          logo: images/logos/BWG.png
-          url: https://bestwebsite.gallery/
-          description: Website Showcase Inspiration | Best Websites Gallery
-        - title: Pages
-          logo: images/logos/pages.png
-          url: http://www.pages.xyz/
-          description: Curated directory of the best Pages
-        - title: SiteSee
-          logo: images/logos/SiteSee.png
-          url: https://sitesee.co/
-          description: SiteSee is a curated gallery of beautiful, modern websites collections.
-        - title: Site Inspire
-          logo: images/logos/siteInspire.png
-          url: https://www.siteinspire.com/
-          description: A CSS gallery and showcase of the best web design inspiration.
-        - title: WebInspiration
-          logo: images/logos/WebInspiration.png
-          url: http://web.uedna.com/
-          description: 网页设计欣赏,全球顶级网页设计
-        - title: navnav
-          logo: images/logos/navnav.png
-          url: https://navnav.co/
-          description: A ton of CSS, jQuery, and JavaScript responsive navigation examples, demos, and tutorials from all over the web.
-        - title: Really Good UX
-          logo: images/logos/ReallyGoodUX.png
-          url: https://www.reallygoodux.io/
-          description: A library of screenshots and examples of really good UX. Brought to you by
+        .navbar::-webkit-scrollbar {
+            width: 4px;
+        }
 
-      
-- taxonomy: 素材资源
-  icon: fa-thumbs-up
-  list: 
-    - term: 图标素材
-      links:
-        - title: Iconfinder
-          logo: images/logos/Iconfinder.png
-          url: https://www.iconfinder.com
-          description: 2,100,000+ free and premium vector icons.
-        - title: iconfont
-          logo: images/logos/iconfont.png
-          url: http://www.iconfont.cn/
-          description: 阿里巴巴矢量图标库
-        - title: iconmonstr
-          logo: images/logos/iconmonstr.png
-          url: https://iconmonstr.com/
-          description: Free simple icons for your next project
-        - title: Icon Archive
-          logo: images/logos/iconarchive.png
-          url: http://www.iconarchive.com/
-          description: Search 590,912 free icons
-        - title: FindIcons
-          logo: images/logos/FindIcons.png
-          url: https://findicons.com/
-          description: Search through 300,000 free icons
-        - title: IcoMoonApp
-          logo: images/logos/IcoMoonApp.png
-          url: https://icomoon.io/app/
-          description: Icon Font, SVG, PDF &amp; PNG Generator
-        - title: easyicon
-          logo: images/logos/easyicon.png
-          url: http://www.easyicon.net/
-          description: PNG、ICO、ICNS格式图标搜索、图标下载服务
-        - title: flaticon
-          logo: images/logos/flaticon.png
-          url: https://www.flaticon.com/
-          description: 634,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT.
-        - title: UICloud
-          logo: images/logos/UICloud.png
-          url: http://ui-cloud.com/
-          description: The largest user interface design database in the world.
-        - title: Material icons
-          logo: images/logos/Materialicons.png
-          url: https://material.io/icons/
-          description: Access over 900 material system icons, available in a variety of sizes and densities, and as a web font.
-        - title: Font Awesome Icon
-          logo: images/logos/fontawesomeicon.png
-          url: https://fontawesome.com/icons/
-          description: The complete set of 675 icons in Font Awesome
-        - title: ion icons
-          logo: images/logos/ionicons.png
-          url: http://ionicons.com/
-          description: The premium icon font for Ionic Framework.
-        - title: Simpleline Icons
-          logo: images/logos/simplelineicons.png
-          url: http://simplelineicons.com/
-          description: Simple line Icons pack
-      
-    - term: LOGO设计
-      links:
-        - title: Iconsfeed
-          logo: images/logos/iconsfeed.png
-          url: http://www.iconsfeed.com/
-          description: iOS icons gallery
-        - title: iOS Icon Gallery
-          logo: images/logos/iosicongallery.png
-          url: http://iosicongallery.com/
-          description: Showcasing beautiful icon designs from the iOS App Store
-        - title: World Vector Logo
-          logo: images/logos/worldvectorlogo.png
-          url: https://worldvectorlogo.com/
-          description: Brand logos free to download
-        - title: Instant Logo Search
-          logo: images/logos/InstantLogoSearch.png
-          url: http://instantlogosearch.com/
-          description: Search & download thousands of logos instantly
+        .navbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
 
-    - term: 平面素材
-      links:
-        - title: freepik
-          logo: images/logos/freepik.png
-          url: https://www.freepik.com/
-          description: More than a million free vectors, PSD, photos and free icons.
-        - title: wallhalla
-          logo: images/logos/wallhalla.png
-          url: https://wallhalla.com/
-          description: Find awesome high quality wallpapers for desktop and mobile in one place.
-        - title: 365PSD
-          logo: images/logos/365PSD.png
-          url: https://365psd.com/
-          description: Free PSD &amp; Graphics, Illustrations
-        - title: Medialoot
-          logo: images/logos/Medialoot.png
-          url: https://medialoot.com/
-          description: Free &amp; Premium Design Resources &mdash; Medialoot
-        - title: 千图网
-          logo: images/logos/qiantu.png
-          url: http://www.58pic.com/
-          description: 专注免费设计素材下载的网站
-        - title: 千库网
-          logo: images/logos/qianku.png
-          url: http://588ku.com/
-          description: 免费png图片背景素材下载
-        - title: 我图网
-          logo: images/logos/wotu.png
-          url: http://www.ooopic.com/
-          description: 我图网,提供图片素材及模板下载,专注正版设计作品交易
-        - title: 90设计
-          logo: images/logos/90sheji.png
-          url: http://90sheji.com/
-          description: 电商设计（淘宝美工）千图免费淘宝素材库
-        - title: 昵图网
-          logo: images/logos/nipic.png
-          url: http://www.nipic.com/
-          description: 原创素材共享平台
-        - title: 懒人图库
-          logo: images/logos/lanrentuku.png
-          url: http://www.lanrentuku.com/
-          description: 懒人图库专注于提供网页素材下载
-        - title: 素材搜索
-          logo: images/logos/sousucai.png
-          url: http://so.ui001.com/
-          description: 设计素材搜索聚合
-        - title: PS饭团网
-          logo: images/logos/psefan.png
-          url: http://psefan.com/
-          description: 不一样的设计素材库！让自己的设计与众不同！
-        - title: 素材中国
-          logo: images/logos/sccnn.png
-          url: http://www.sccnn.com/
-          description: 免费素材共享平台
-      
-    - term: UI资源
-      links:
-        - title: Freebiesbug
-          logo: images/logos/freebiesbug.png
-          url: https://freebiesbug.com/
-          description: Hand-picked resources for web designer and developers, constantly updated.
-        - title: Freebie Supply
-          logo: images/logos/freebiesupply.png
-          url: https://freebiesupply.com/
-          description: Free Resources For Designers
-        - title: 云瑞
-          logo: images/logos/yrucd.png
-          url: https://www.yrucd.com/
-          description: 优秀设计资源的分享网站
-        - title: Designmodo
-          logo: images/logos/Designmodo.png
-          url: https://designmodo.com/
-          description: Web Design Blog and Shop
-        - title: 稀土区
-          logo: images/logos/xituqu.png
-          url: https://xituqu.com/
-          description: 优质设计开发资源分享
-        - title: ui8
-          logo: images/logos/ui8.png
-          url: https://ui8.net/
-          description: UI Kits, Wireframe Kits, Templates, Icons and More
-        - title: uplabs
-          logo: images/logos/uplabs.png
-          url: https://www.uplabs.com/
-          description: Daily resources for product designers & developers
-        - title: UIkit.me
-          logo: images/logos/uikitme.png
-          url: http://www.uikit.me/
-          description: 最便捷新鲜的uikit资源下载网站
-        - title: Fribbble
-          logo: images/logos/Fribbble.png
-          url: http://www.fribbble.com/
-          description: Free PSD files and other free design resources by Dribbblers.
-        - title: PrincipleRepo
-          logo: images/logos/PrincipleRepo.png
-          url: http://principlerepo.com/
-          description: Free, High Quality Principle Resources
-      
-    - term: Sketch资源
-      links:
-        - title: Sketch
-          url: https://sketchapp.com/
-          logo: images/logos/Sketch.png
-          description: The digital design toolkit
-        - title: Sketch Measure
-          url: http://utom.design/measure/
-          logo: images/logos/SketchMeasure.png
-          description: Friendly user interface offers you a more intuitive way of making marks.
-        - title: Sketch App Sources
-          url: https://www.sketchappsources.com/
-          logo: images/logos/sketchappsources.png
-          description: Free design resources and plugins - Icons, UI Kits, Wireframes, iOS, Android Templates for Sketch
-        - title: Sketch.im
-          url: http://www.sketch.im/
-          logo: images/logos/sketchIm.png
-          description: Sketch 相关资源汇聚
-        - title: Sketch Hunt
-          url: http://sketchhunt.com/
-          logo: images/logos/sketchhunt.png
-          description: Sketch Hunt is an independent blog sharing gems in learning, plugins &amp; design tools for fans of Sketch app.
-        - title: Sketch中文网
-          url: http://www.sketchcn.com/
-          logo: images/logos/sketchcn.png
-          description: 分享最新的Sketch中文手册
-        - title: Awesome Sketch Plugins
-          url: https://awesome-sket.ch/
-          logo: images/logos/AwesomeSketchPlugins.png
-          description: A collection of really useful Sketch plugins.
-        - title: Sketchcasts
-          url: https://www.sketchcasts.net/
-          logo: images/logos/sketchcasts.png
-          description: Learn Sketch Train your design skills with a weekly video tutorial
-      
-    - term: 字体资源
-      links:
-        - title: Google Font
-          url: https://fonts.google.com/
-          logo: images/logos/googlefont.png
-          description: Making the web more beautiful, fast, and open through great typography
-        - title: Typekit
-          url: https://typekit.com/
-          logo: images/logos/typekit.png
-          description: Quality fonts from the world’s best foundries.
-        - title: 方正字库
-          url: http://www.foundertype.com/
-          logo: images/logos/Fondertype.png
-          description: 方正字库官方网站
-        - title: 字体传奇网
-          url: http://ziticq.com/
-          logo: images/logos/ziticq.png
-          description: 中国首个字体品牌设计师交流网
-        - title: 私藏字体
-          url: http://sicangziti.com/
-          logo: images/logos/sicangziti.png
-          description: 优质字体免费下载站
-        - title: Fontsquirrel
-          url: https://www.fontsquirrel.com/
-          logo: images/logos/fontsquirrel.png
-          description: FREE fonts for graphic designers
-        - title: Urban Fonts
-          url: https://www.urbanfonts.com/
-          logo: images/logos/UrbanFonts.png
-          description: Download Free Fonts and Free Dingbats.
-        - title: Lost Type
-          url: http://www.losttype.com/
-          logo: images/logos/losttype.png
-          description: Lost Type is a Collaborative Digital Type Foundry
-        - title: FONTS2U
-          url: https://fonts2u.com/
-          logo: images/logos/fonts2u.png
-          description: Download free fonts for Windows and Macintosh.
-        - title: Fontex
-          url: http://www.fontex.org/
-          logo: images/logos/fontex.png
-          description: Free Fonts to Download + Premium Typefaces
-        - title: FontM
-          url: http://fontm.com/
-          logo: images/logos/FontM.png
-          description: Free Fonts
-        - title: My Fonts
-          url: http://www.myfonts.com/
-          logo: images/logos/MyFonts.png
-          description: Fonts for Print, Products & Screens
-        - title: Da Font
-          url: https://www.dafont.com/
-          logo: images/logos/dafont.png
-          description: Archive of freely downloadable fonts.
-        - title: OnlineWebFonts
-          url: https://www.onlinewebfonts.com/
-          logo: images/logos/OnlineWebFonts.png
-          description: WEB Free Fonts for Windows and Mac / Font free Download
-        - title: Abstract Fonts
-          url: http://www.abstractfonts.com/
-          logo: images/logos/abstractfonts.png
-          description: Abstract Fonts (13,866 free fonts)
-      
-    - term: Mockup
-      links:
-        - title: MockupZone
-          url: https://mockup.zone/
-          logo: images/logos/MockupZone.png
-          description: Mockup Zone is an online store where you can find free and premium PSD mockup files to show your designs in a professional way.
-        - title: Dunnnk
-          url: http://dunnnk.com/
-          logo: images/logos/Dunnnk.png
-          description:  Generate Product Mockups For Free
-        - title: Graphberry
-          url: http://www.graphberry.com/
-          logo: images/logos/graphberry.png
-          description: Free design resources, Mockups, PSD web templates, Icons
-        - title: Threed
-          url: http://threed.io/
-          logo: images/logos/threed.png
-          description: Generate 3D Mockups right in your Browser
-        - title: Mockup World
-          url: https://free.lstore.graphics/
-          logo: images/logos/mockupworld.png
-          description: The best free Mockups from the Web
-        - title: Lstore
-          url: https://free.lstore.graphics/
-          logo: images/logos/lstore.png
-          description: Exclusive mindblowing freebies for designers and developers
-        - title: pixeden
-          url: https://www.pixeden.com/
-          logo: images/logos/pixeden.png
-          description: free web resources and graphic design templates.
-        - title: For Graphic TM
-          url: http://forgraphictm.com/
-          logo: images/logos/forgraphictm.png
-          description: High Quality PSD Mockups for Graphic Designers.
-      
-    - term: 摄影图库
-      links:
-        - title: Unsplash
-          url: https://unsplash.com/
-          logo: images/logos/unsplash.png
-          description: Beautiful, free photos.
-        - title: visualhunt
-          url: https://visualhunt.com/
-          logo: images/logos/visualhunt.png
-          description: 100% Free High Quality Photos
-        - title: librestock
-          url: https://librestock.com/
-          logo: images/logos/librestock.png
-          description: 65,084 high quality do-what-ever-you-want stock photos
-        - title: pixabay
-          url: https://pixabay.com/
-          logo: images/logos/pixabay.png
-          description: 可在任何地方使用的免费图片和视频
-        - title: SplitShire
-          url: https://www.splitshire.com/
-          logo: images/logos/SplitShire.png
-          description: Free Stock Photos and Videos for commercial use.
-        - title: StockSnap
-          url: https://stocksnap.io/
-          logo: images/logos/StockSnap.png
-          description: Beautiful free stock photos
-        - title: albumarium
-          url: http://albumarium.com/
-          logo: images/logos/albumarium.png
-          description: The best place to find & share beautiful images
-        - title: myphotopack
-          url: https://myphotopack.com/
-          logo: images/logos/myphotopack.png
-          description: A free photo pack just for you. Every month.
-        - title: Notaselfie
-          url: http://notaselfie.com/
-          logo: images/logos/notaselfie.png
-          description: Photos that happen along the way. You can use the images anyway you like. Have fun!
-        - title: papers
-          url: http://papers.co/
-          logo: images/logos/papers.png
-          description: Wallpapers Every Hour!Hand collected :)
-        - title: stokpic
-          url: http://stokpic.com/
-          logo: images/logos/stokpic.png
-          description: Free Stock Photos For Commercial Use
-        - title: 55mm
-          url: https://55mm.co/visuals
-          logo: images/logos/55mm.png
-          description: Use our FREE photos to tell your story! 
-        - title: thestocks
-          url: http://thestocks.im/
-          logo: images/logos/thestocks.png
-          description: Use our FREE photos to tell your story! 
-        - title: freenaturestock
-          url: http://freenaturestock.com/
-          logo: images/logos/freenaturestock.png
-          description: Exclusive mindblowing freebies for designers and developers
-        - title: negativespace
-          url: https://negativespace.co/
-          logo: images/logos/negativespace.png
-          description: Beautiful, High-Resolution Free Stock Photos
-        - title: gratisography
-          url: https://gratisography.com/
-          logo: images/logos/gratisography.png
-          description: Free high-resolution pictures you can use on your personal and commercial projects, free of copyright restrictions. 
-        - title: imcreator
-          url: http://imcreator.com/free
-          logo: images/logos/imcreator.png
-          description: A curated collection of free web design resources, all for commercial use.
-        - title: lifeofpix
-          url: http://www.lifeofpix.com/
-          logo: images/logos/lifeofpix.png
-          description: Free high resolution photography
-        - title: skitterphoto
-          url: https://skitterphoto.com/
-          logo: images/logos/skitterphoto.png
-          description: Free Stock Photos for Creative Professionals
-        - title: mmtstock
-          url: https://mmtstock.com/
-          logo: images/logos/mmtstock.png
-          description: Free photos for commercial use
-        - title: skitterphoto
-          url: https://skitterphoto.com/
-          logo: images/logos/skitterphoto.png
-          description: a place to find, show and share public domain photos
-        - title: magdeleine
-          url: https://magdeleine.co/browse/
-          logo: images/logos/magdeleine.png
-          description: HAND-PICKED FREE PHOTOS FOR YOUR INSPIRATION
-        - title: jeshoots
-          url: http://jeshoots.com/
-          logo: images/logos/jeshoots.png
-          description: New Free Photos & Mockups in to your Inbox!
-        - title: hdwallpapers
-          url: https://www.hdwallpapers.net
-          logo: images/logos/hdwallpapers.png
-          description: High Definition Wallpapers & Desktop Backgrounds
-        - title: publicdomainarchive
-          url: http://publicdomainarchive.com/
-          logo: images/logos/publicdomainarchive.png
-          description: New 100% Free Stock Photos. Every. Single. Week.
-      
-    - term: PPT资源
-      links:
-        - title: OfficePLUS
-          url: http://www.officeplus.cn/Template/Home.shtml
-          logo: images/logos/officeplus.png
-          description: OfficePLUS，微软Office官方在线模板网站！
-        - title: 优品PPT
-          url: http://www.ypppt.com/
-          logo: images/logos/ypppt.png
-          description: 高质量的模版，而且还有PPT图表，PPT背景图等资源
-        - title: PPT+
-          url: http://www.pptplus.cn/
-          logo: images/logos/pptplus.png
-          description: PPT加直播、录制和分享—PPT+语音内容分享平台
-        - title: PPTMind
-          url: http://www.pptmind.com/
-          logo: images/logos/pptmind.png
-          description: 分享高端ppt模板与keynote模板的数字作品交易平台
-        - title: tretars
-          url: http://www.tretars.com/ppt-templates
-          logo: images/logos/tretars.png
-          description: The best free Mockups from the Web
-        - title: 5百丁
-          url: http://ppt.500d.me/
-          logo: images/logos/500d.png
-          description: 中国领先的PPT模板共享平台
-      
+        .navbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
 
-- taxonomy: 常用工具
-  icon: fa-palette
-  list: 
-    - term: 图形创意
-      links:
-        - title: photoshop
-          url: https://www.adobe.com/cn/products/photoshop.html
-          logo: images/logos/photoshop.png
-          description: Photoshop不需要解释
-        - title: Affinity Designer
-          url: https://affinity.serif.com/
-          logo: images/logos/AffinityDesigner.png
-          description: 专业创意软件
-        - title: Illustrator
-          url: https://www.adobe.com/cn/products/illustrator/
-          logo: images/logos/Illustrator.png
-          description: 矢量图形和插图。
-        - title: indesign
-          url: http://www.adobe.com/cn/products/indesign.html
-          logo: images/logos/INDESIGN .png
-          description: 页面设计、布局和出版。
-        - title: cinema-4d
-          url: https://www.maxon.net/en/products/cinema-4d/overview/
-          logo: images/logos/cinema4d.png
-          description: Cinema 4D is the perfect package for all 3D artists who want to achieve breathtaking results fast and hassle-free.
-        - title: 3ds-max
-          url: https://www.autodesk.com/products/3ds-max/overview
-          logo: images/logos/3dsmax.png
-          description: 3D modeling, animation, and rendering software
-        - title: Blender
-          url: https://www.blender.org/
-          logo: images/logos/blender.png
-          description: Blender is the free and open source 3D creation suite.
-      
-    - term: 界面设计
-      links:
-        - title: Sketch
-          url: https://sketchapp.com/
-          logo: images/logos/sketchapp.png
-          description: The digital design toolkit
-        - title: Adobe XD
-          url: http://www.adobe.com/products/xd.html
-          logo: images/logos/ADOBEXDCC.png
-          description: Introducing Adobe XD. Design. Prototype. Experience.
-        - title: invisionapp
-          url: https://www.invisionapp.com/
-          logo: images/logos/invisionapp.png
-          description: Powerful design prototyping tools
-        - title: marvelapp
-          url: https://marvelapp.com/
-          logo: images/logos/marvelapp.png
-          description: Simple design, prototyping and collaboration
-        - title: Muse CC
-          url: https://creative.adobe.com/zh-cn/products/download/muse
-          logo: images/logos/MuseCC.png
-          description: 无需利用编码即可进行网站设计。
-        - title: figma
-          url: https://www.figma.com/
-          logo: images/logos/figma.png
-          description: Design, prototype, and gather feedback all in one place with Figma.
-    - term: 交互动效
-      links:
-        - title: Adobe After Effects CC
-          url: https://www.adobe.com/cn/products/aftereffects/
-          logo: images/logos/AdobeAfterEffectsCC.png
-          description: 电影般的视觉效果和动态图形。
-        - title: principle
-          url: http://principleformac.com/
-          logo: images/logos/principle.png
-          description: Animate Your Ideas, Design Better Apps
-        - title: flinto
-          url: https://www.flinto.com/
-          logo: images/logos/flinto.png
-          description: Flinto is a Mac app used by top designers around the world to create interactive and animated prototypes of their app designs.
-        - title: framer
-          url: https://framer.com/
-          logo: images/logos/framer.png
-          description: Design everything from detailed icons to high-fidelity interactions—all in one place.
-        - title: ProtoPie
-          url: http://www.protopie.cn/
-          logo: images/logos/protopie.png
-          description: 高保真交互原型设计
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 2px;
+            padding: 8px 0;
+        }
 
-    - term: 在线配色
-      links:
-        - title: khroma
-          url: http://khroma.co/generator/
-          logo: images/logos/khroma.png
-          description: Khroma is the fastest way to discover, search, and save color combos you'll want to use.
-        - title: uigradients
-          url: https://uigradients.com
-          logo: images/logos/uigradients.png
-          description: Beautiful colored gradients
-        - title: gradients
-          url: http://gradients.io/
-          logo: images/logos/gradients.png
-          description: Curated gradients for designers and developers
-        - title: Coolest
-          url: https://webkul.github.io/coolhue/
-          logo: images/logos/Coolest.png
-          description: Coolest handpicked Gradient Hues for your next super ⚡ amazing stuff
-        - title: webgradients
-          url: https://webgradients.com/
-          logo: images/logos/webgradients.png
-          description: WebGradients is a free collection of 180 linear gradients that you can use as content backdrops in any part of your website. 
-        - title: grabient
-          url: https://www.grabient.com/
-          logo: images/logos/grabient.png
-          description: 2017 Grabient by unfold
-        - title: thedayscolor
-          url: http://www.thedayscolor.com/
-          logo: images/logos/thedayscolor.png
-          description: The daily color digest
-        - title: flatuicolors
-          url: http://flatuicolors.com/
-          logo: images/logos/flatuicolors.png
-          description: Copy Paste Color Pallette from Flat UI Theme
-        - title: coolors
-          url: https://coolors.co/
-          logo: images/logos/coolors.png
-          description: The super fast color schemes generator!
-        - title: colorhunt
-          url: http://www.colorhunt.co/
-          logo: images/logos/colorhunt.png
-          description: Beautiful Color Palettes
-        - title: Adobe Color CC
-          url: https://color.adobe.com/zh/create/color-wheel
-          logo: images/logos/AdobeColorCC.png
-          description: Create color schemes with the color wheel or browse thousands of color combinations from the Color community.
-        - title: flatuicolorpicker
-          url: http://www.flatuicolorpicker.com/
-          logo: images/logos/flatuicolorpicker.png
-          description: Best Flat Colors For UI Design
-        - title: trianglify
-          url: http://qrohlf.com/trianglify-generator/
-          logo: images/logos/trianglify.png
-          description: Trianglify Generator
-        - title: klart
-          url: https://klart.co/colors/
-          logo: images/logos/klart.png
-          description: Beautiful colors and designs to your inbox every week
-        - title: vanschneider
-          url: http://www.vanschneider.com/colors
-          logo: images/logos/vanschneider.png
-          description: Color Claim was created in 2012 by Tobias van Schneider with the goal to collect & combine unique colors for my future projects.
+        .nav-list>li>a {
+            display: block;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            transition: all 0.2s;
+            cursor: pointer;
+            white-space: nowrap;
+        }
 
-    - term: 在线工具
-      links:
-        - title: tinypng
-          url: https://tinypng.com/
-          logo: images/logos/tinypng.png
-          description: Optimize your images with a perfect balance in quality and file size.
-        - title: goqr
-          url: http://goqr.me/
-          logo: images/logos/goqr.png
-          description: create QR codes for free (Logo, T-Shirt, vCard, EPS)
-        - title: ezgif
-          url: https://ezgif.com
-          logo: images/logos/ezgif.png
-          description: simple online GIF maker and toolset for basic animated GIF editing.
-        - title: Android 9 patch
-          url: http://inloop.github.io/shadow4android/
-          logo: images/logos/Android9patch.png
-          description: Android 9-patch shadow generator fully customizable shadows
-        - title: screen sizes
-          url: http://screensiz.es/
-          logo: images/logos/screensizes.png
-          description: Viewport Sizes and Pixel Densities for Popular Devices
-        - title: svgomg
-          url: https://jakearchibald.github.io/svgomg/
-          logo: images/logos/svgomg.png
-          description: SVG在线压缩平台
-        - title: 稿定抠图
-          url: https://www.gaoding.com
-          logo: images/logos/gaoding.png
-          description: 免费在线抠图软件,图片快速换背景-抠白底图
-        
-    - term: Chrome插件
-      links:
-        - title: wappalyzer
-          url: https://www.wappalyzer.com/
-          logo: images/logos/wappalyzer.png
-          description: Identify technology on websites
-        - title: Panda
-          url: http://usepanda.com/
-          logo: images/logos/usepanda.png
-          description: A smart news reader built for productivity.
-        - title: sizzy
-          url: https://sizzy.co/
-          logo: images/logos/sizzy.png
-          description: A tool for developing responsive websites crazy-fast
-        - title: csspeeper
-          url: https://csspeeper.com/
-          logo: images/logos/csspeeper.png
-          description: Smart CSS viewer tailored for Designers.
-        - title: insight
-          url: http://insight.io/
-          logo: images/logos/insight.png
-          description: IDE-like code search and navigation, on the cloud
-        - title: mustsee
-          url: http://mustsee.earth/
-          logo: images/logos/mustsee.png
-          description: Discover the world's most beautiful places at every opened tab.
+        .nav-list>li>a:hover,
+        .nav-list>li>a.active {
+            background: rgba(255, 255, 255, 0.10);
+            color: #fff;
+        }
 
+        .nav-list>li>a.active {
+            background: rgba(99, 102, 241, 0.25);
+            color: #818cf8;
+        }
 
-- taxonomy: 学习教程
-  icon: fa-regular fa-folder-open
-  list: 
-    - term: 设计规范
-      links:
-        - title: Design Guidelines
-          url: http://designguidelines.co/
-          logo: images/logos/designguidelines.png
-          description: Design Guidelines &mdash; The way products are built.
-        - title: Awesome design systems
-          url: https://github.com/alexpate/awesome-design-systems
-          logo: images/logos/awesome_design_systems.png
-          description:  A collection of awesome design systems
-        - title: Material Design
-          url: https://material.io/guidelines/
-          logo: images/logos/Material_Design.png
-          description: Introduction - Material Design
-        - title: Human Interface Guidelines
-          url: https://developer.apple.com/ios/human-interface-guidelines
-          logo: images/logos/human_interface_guidelines.png
-          description: Human Interface Guidelines iOS
-        - title: Photoshop Etiquette
-          url: http://viggoz.com/photoshopetiquette/
-          logo: images/logos/photoshopetiquette.png
-          description: PS礼仪-WEB设计指南
+        /* ===== 搜索区域 ===== */
+        .search-section {
+            padding: 20px 16px 16px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
 
-      
-    - term: 视频教程
-      links:
-        - title: Photoshop Lady
-          url: http://www.photoshoplady.com/
-          logo: images/logos/PhotoshopLady.png
-          description: Your Favourite Photoshop Tutorials in One Place
-        - title: doyoudo
-          url: http://doyoudo.com/
-          logo: images/logos/doyoudo.png
-          description: 创意设计软件学习平台
-        - title: 没位道
-          url: http://www.c945.com/web-ui-tutorial/
-          logo: images/logos/web_ui_tutorial.png
-          description: WEB UI免费视频公开课
-        - title: 慕课网
-          url: https://www.imooc.com/
-          logo: images/logos/imooc.png
-          description: 程序员的梦工厂（有UI课程）
-        
-    - term: 设计文章
-      links:
-        - title: 优设网
-          url: http://www.uisdc.com/
-          logo: images/logos/uisdc.png
-          description: 设计师交流学习平台
-        - title: Web Design Ledger
-          url: https://webdesignledger.com
-          logo: images/logos/webdesignledger.png
-          description: Web Design Blog
-        - title: Medium
-          url: https://medium.com/
-          logo: images/logos/medium.png
-          description: Read, write and share stories that matter
+        .search-engines {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
 
-    - term: 设计电台
-      links:
-        - title: UX Coffee
-          url: http://uxcoffee.co/
-          logo: images/logos/uxcoffee.png
-          description: 《UX Coffee 设计咖》是一档关于用户体验的播客节目。我们邀请来自硅谷和国内的学者和职人来聊聊「产品设计」、「用户体验」和「个人成长」。
-        - title: Anyway.FM
-          url: https://anyway.fm/
-          logo: images/logos/anyway.png
-          description: 设计杂谈 • UI 设计师 JJ 和 Leon 主播的设计播客
-        - title: 异能电台
-          url: https://www.yineng.fm
-          logo: images/logos/yineng.png
-          description: 将全宇宙设计师的故事讲给你听。
+        .search-engines button {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
 
-    - term: 交互设计
-      links:
-        - title: Little Big Details
-          url: http://littlebigdetails.com/
-          logo: images/logos/littlebigdetails.png
-          description: Little Big Details is a curated collection of the finer details of design, updated every day. 
-        - title: Smashing Magazine
-          url: https://www.smashingmagazine.com/category/user-experience
-          logo: images/logos/smashingmagazine.png
-          description: Below you’ll find the best tips to take not only your UX design process but also the experiences you craft to the next level.
-        - title: nngroup
-          url: https://www.nngroup.com/articles/
-          logo: images/logos/nngroup.png
-          description: Evidence-Based User Experience Research, Training, and Consulting
-        - title: Boxes and Arrows
-          url: http://boxesandarrows.com/
-          logo: images/logos/boxesandarrows.png
-          description: Boxes and Arrows is devoted to the practice, innovation, and discussion of design; including graphic design, interaction design, information architecture and the design of business. 
-        - title: UX Design Weekly
-          url: http://uxdesignweekly.com/
-          logo: images/logos/uxdesignweekly.png
-          description:  get a hand picked list of the best user experience design links every week. 
-        - title: UX Ren
-          url: http://uxren.cn/
-          logo: images/logos/uxren.png
-          description: 用户体验人的专业社区
+        .search-engines button:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.06);
+        }
 
+        .search-engines button.active {
+            color: #818cf8;
+            background: rgba(99, 102, 241, 0.18);
+        }
 
-- taxonomy: UED团队
-  icon: fa-user-group
-  links: 
-    - title: Airbnb Design
-      url: https://airbnb.design
-      logo: images/logos/AirbnbDesign.png
-      description: Airbnb Design
-    - title: Facebook Design
-      url: http://facebook.design/
-      logo: images/logos/FacebookDesign.png
-      description: Facebook Design
-    - title: Google Design
-      url: https://design.google/
-      logo: images/logos/GoogleDesign.png
-      description: Google Design
-    - title: eico design
-      url: http://eicodesign.com/
-      logo: images/logos/eico.png
-      description: 数字化咨询与产品专家
-    - title: nice design
-      url: http://www.niceui.cn/
-      logo: images/logos/niceui.png
-      description: nicedesign奈思设计是领先的用户体验设计与互联网品牌建设公司
-    - title: 腾讯CDC
-      url: http://cdc.tencent.com/
-      logo: images/logos/cdc.png
-      description: 腾讯CDC关注于互联网视觉设计、交互设计、用户研究、前端开发。
-    - title: TGideas
-      url: http://tgideas.qq.com/
-      logo: images/logos/tgideas.png
-      description: TGideas隶属于腾讯公司互动娱乐业务系统的专业推广类设计团队
-    - title: ISUX
-      url: https://isux.tencent.com/
-      logo: images/logos/isux.png
-      description: 腾讯社交用户体验设计部
-    - title: MXD
-      url: http://mxd.tencent.com/
-      logo: images/logos/mxd.png
-      description: 腾讯MIG无线互联网事业群设计团队
-    - title: Aliued
-      url: http://www.aliued.com/
-      logo: images/logos/aliued.png
-      description: 阿里巴巴国际UED团队
-    - title: U一点
-      url: http://www.aliued.cn/
-      logo: images/logos/aliuedcn.png
-      description: 阿里巴巴（中国站）用户体验设计部博客U一点设计 UED团队
-    - title: 网易uedc
-      url: http://uedc.163.com/
-      logo: images/logos/uedc.png
-      description: 网易用户体验设计中心（User Experience Design Center）
-    - title: 百度用户体验中心
-      url: http://ued.baidu.com/
-      logo: images/logos/uedbaidu.png
-      description: 百度用户体验中心
-    - title: 京东设计中心
-      url: http://jdc.jd.com/
-      logo: images/logos/JDC.png
-      description: 京东设计中心
-    - title: 百度企业产品用户体验中心
-      url: http://eux.baidu.com/
-      logo: images/logos/euxbaidu.png
-      description: 百度企业产品用户体验中心
-    - title: 携程设计委员会
-      url: http://ued.ctrip.com/
-      logo: images/logos/ctrip.png
-      description: 携程设计委员会-Ctrip Design Committee
-     
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            padding: 0 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: border-color 0.3s;
+        }
 
+        .search-box:focus-within {
+            border-color: rgba(99, 102, 241, 0.5);
+        }
 
+        .search-box input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 12px 10px;
+            font-size: 15px;
+            color: #fff;
+        }
 
-     
-- taxonomy: 友情链接
-  icon: fa-link
-  friend:
-    - title: 子页面一
-      url: sub1
-      description: 本站子页面1
-    - title: 子页面二
-      url: sub2
-      description: 本站子页面2
-    - title: webstack.cc
-      url: https://webstack.cc
-      description: webstack - 设计师网址导航
-    - title: 一为导航
-      url: https://nav.iowen.cn/
-      description: onenav主题演示站
-    - title: 趣导航
-      url: https://qssily.com/
-    - title: 404导航
-      url: https://www.404dh.icu/
-      description: 只导航优质资源
-    - title: OPENI
-      url: https://openi.cn/
-    - title: 飞猪ai导航
-      url: https://feizhuke.com/
-      description: AI工具集箱
-    - title: bioit导航
-      url: https://www.bioit.top/
-      description:
-    - title: 所长导航
-      url: https://liutongxu.github.io/
-      description:
-    - title: 一为webstack
-      url: https://webstack.iotheme.cn/
-    - title: iplaycode
-      url: https://iplaycode.github.io/nav/
-      description: iplaycode的demo导航网站
----
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .search-box button {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 8px 6px 8px 12px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: color 0.2s;
+        }
+
+        .search-box button:hover {
+            color: #818cf8;
+        }
+
+        /* ===== 内容区域 ===== */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 16px 30px;
+        }
+
+        /* 分组标题 */
+        .group-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 20px 0 12px 4px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .group-title i {
+            color: #818cf8;
+            font-size: 16px;
+        }
+
+        .group-title:first-of-type {
+            margin-top: 6px;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 12px;
+        }
+
+        .link-item {
+            animation: fadeUp 0.35s ease both;
+        }
+
+        .link-item a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 14px;
+            padding: 16px 6px 12px;
+            transition: all 0.25s ease;
+            border: 1px solid transparent;
+            min-height: 90px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .link-item a:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.10);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            object-fit: contain;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 4px;
+            margin-bottom: 6px;
+            transition: transform 0.2s;
+            flex-shrink: 0;
+        }
+
+        .link-item a:hover .link-icon {
+            transform: scale(1.05);
+        }
+
+        .icon-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            font-size: 18px;
+            margin-bottom: 6px;
+            flex-shrink: 0;
+            font-weight: 600;
+        }
+
+        .link-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.3;
+            word-break: break-word;
+            max-width: 100%;
+        }
+
+        .link-desc {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.3);
+            margin-top: 2px;
+            line-height: 1.2;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        /* 空状态 */
+        .empty-state {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 40px 0;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .empty-state i {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        /* ===== 页脚 ===== */
+        .footer {
+            text-align: center;
+            padding: 24px 16px 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 10px;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.35);
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: #818cf8;
+        }
+
+        /* ===== 动画 ===== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== 响应式 ===== */
+        @media (max-width: 640px) {
+            .navbar {
+                padding: 0 8px;
+                max-height: 50vh;
+            }
+            .nav-list>li>a {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+            .card-grid {
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+                gap: 8px;
+            }
+            .link-item a {
+                padding: 12px 4px 10px;
+                min-height: 76px;
+            }
+            .link-icon,
+            .icon-placeholder {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+            .link-text {
+                font-size: 11px;
+            }
+            .link-desc {
+                display: none;
+            }
+            .search-section {
+                padding: 14px 10px 12px;
+            }
+            .search-box input {
+                font-size: 14px;
+                padding: 10px 6px;
+            }
+            .group-title {
+                font-size: 15px;
+                margin: 14px 0 8px 2px;
+            }
+        }
+
+        @media (min-width: 641px) and (max-width: 1024px) {
+            .card-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== 顶部导航 ===== -->
+    <nav class="navbar" id="navbar">
+        <ul class="nav-list" id="navList">
+            <!-- 由 JavaScript 动态生成 -->
+        </ul>
+    </nav>
+
+    <!-- ===== 搜索区域 ===== -->
+    <section class="search-section">
+        <div class="search-engines" id="searchEngines">
+            <button class="active">Google</button>
+            <button>百度</button>
+            <button>Bing</button>
+            <button>GitHub</button>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Google 搜索..." />
+            <button id="searchBtn" title="搜索"><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+
+    <!-- ===== 内容区域 ===== -->
+    <main class="container" id="mainContainer">
+        <!-- 由 JavaScript 动态渲染 -->
+    </main>
+
+    <!-- ===== 页脚 ===== -->
+    <footer class="footer">
+        <p>Copyright © 2026 · 设计师导航 · <a href="#" target="_blank">Powered by You</a></p>
+    </footer>
+
+    <script>
+        // ================================================================
+        //  1. 数据 —— 完整转换自用户提供的 YAML
+        // ================================================================
+        const NAV_DATA = [{
+            taxonomy: "常用推荐",
+            icon: "fa-star",
+            links: [
+                { title: "YouTube", logo: "https://www.google.com/s2/favicons?sz=64&domain=www.youtube.com", url: "https://youtube.com/channel/UCznJBUw3oHOpMFbrF4tcFlg?si=vqBtoeG_oWxUWRmB", description: "一个专注于软件安装，科学上网教学的频道！" },
+                { title: "资源博客", logo: "images/logos/kjgxa999f-kjgx1fr3l-001.ico", url: "https://kjgx668.blogspot.com/", description: "资源分享，详细图文教程。" },
+                { title: "全宇宙最便宜的vps", logo: "images/logos/racknerd.png", url: "https://my.racknerd.com/aff.php?aff=13491", description: "一年仅10.99每月3T流量17G固态硬盘" },
+                { title: "Switch eSIM卡", logo: "images/logos/Switch.jpg", url: "https://s.tb.cn/c.0wEMb6", description: "让国行手机也有eSIM功能" },
+                { title: "环球巴士", logo: "images/logos/HQBS.png", url: "https://universalbus.cn?s=gB8CJKmJdd", description: "流媒体影音账号合租平" },
+                { title: "万事达虚拟银行卡", logo: "", url: "https://www.bybit.com/invite?ref=QAM3MOJ", description: "国内usdt消费,支付宝、微信充值，海外消费。" },
+                { title: "visa虚拟卡", logo: "", url: "https://app.pokepay.cc/pages/passport/invitation?r=145892", description: "usdt套现，国内拼多多消费，支付宝消费" },
+                { title: "IOS (苹果) ID 礼品卡/兑换码", logo: "images/logos/5eac6d69dc12980944f98.jpg", url: "https://app.xintaifree.com?from=5431/", description: "shadowrocket 小火箭 | quantumult x 圈x | 礼品卡/兑换码 | ChatGPT plus 应有尽有！" },
+                { title: "Telegram", logo: "", url: "https://t.me/kjgxZY/", description: "科技共享资源频道" },
+                { title: "Telegram群组", logo: "", url: "https://t.me/+qf_DtRZ90ys2ZDBl/", description: "沟通交流，资源分享" },
+                { title: "接码平台", logo: "", url: "https://hero-sms.com/?ref=489021/", description: "购买各国电话号码，用于在社交网络、聊天工具和其他服务中注册。" },
+                { title: "Base64编码解码", logo: "", url: "https://99688988.xyz/base64-string-converter/", description: "将utf-8能表示的所有字符进行Base64编码加密解密" },
+                { title: "文叔叔", logo: "", url: "https://www.wenshushu.cn/", description: "传临时文件,大文件、永不限速" },
+                { title: "网络剪贴板", logo: "", url: "https://clipboard.168668520.xyz/", description: "提供数据暂存和传送服务" },
+                { title: "UUID生成", logo: "", url: "https://99688988.xyz/uuid-generator/", description: "UUID在线生成" },
+                { title: "轻抖", logo: "images/logos/qingdou.jpg", url: "https://share.qingdouyin.com/app/sub-commission-download/1652420599279?type=&code=EWDJXS/", description: "涨粉、引流、工具、选品、自购等一站式服务" },
+                { title: "流量变现", logo: "images/logos/rengtuiban.png", url: "https://dt.bd.cn/#/pages/login/register?invite_code=516557", description: "一线的APP推广项目分发和流量变现平台" }
+            ]
+        }, {
+            taxonomy: "社区咨询",
+            icon: "fa-regular fa-newspaper",
+            links: [
+                { title: "雷锋网", logo: "images/logos/leiphone.png", url: "https://www.leiphone.com/", description: "人工智能和智能硬件领域的互联网科技媒体" },
+                { title: "36kr", logo: "images/logos/36kr.png", url: "https://36kr.com/", description: "创业资讯、科技新闻" },
+                { title: "数英网", logo: "images/logos/digitaling.png", url: "https://www.digitaling.com/", description: "数字媒体及职业招聘网站" },
+                { title: "猎云网", logo: "images/logos/lieyunwang.png", url: "https://www.lieyunwang.com/", description: "互联网创业项目推荐和创业创新资讯" },
+                { title: "人人都是产品经理", logo: "images/logos/woshipm.png", url: "http://www.woshipm.com/", description: "产品经理、产品爱好者学习交流平台" },
+                { title: "互联网早读课", logo: "images/logos/zaodula.png", url: "https://www.zaodula.com/", description: "互联网行业深度阅读与学习平台" },
+                { title: "产品壹佰", logo: "images/logos/chanpin100.png", url: "http://www.chanpin100.com/", description: "为产品经理爱好者提供最优质的产品资讯、原创内容和相关视频课程" },
+                { title: "PMCAFF", logo: "images/logos/pmcaff.png", url: "http://www.pmcaff.com/", description: "中国第一产品经理人气组织，专注于研究互联网产品" },
+                { title: "爱运营", logo: "images/logos/iyunying.png", url: "http://www.iyunying.org/", description: "网站运营人员学习交流，专注于网站产品运营管理、淘宝运营。" },
+                { title: "鸟哥笔记", logo: "images/logos/niaogebiji.png", url: "http://www.niaogebiji.com/", description: "移动互联网第一干货平台" },
+                { title: "古田路9号", logo: "images/logos/gtn9.png", url: "http://www.gtn9.com/", description: "国内专业品牌创意平台" },
+                { title: "优阁网", logo: "images/logos/uigreat.png", url: "http://www.uigreat.com/", description: "UI设计师学习交流社区" }
+            ]
+        }, {
+            taxonomy: "灵感采集",
+            icon: "fa-regular fa-lightbulb",
+            list: [{
+                term: "发现产品",
+                links: [
+                    { title: "Producthunt", logo: "images/logos/producthunt.png", url: "https://www.producthunt.com/", description: "发现新鲜有趣的产品" },
+                    { title: "NEXT", logo: "images/logos/NEXT.png", url: "https://next.36kr.com/posts", description: "不错过任何一个新产品" },
+                    { title: "少数派", logo: "images/logos/sspai.png", url: "https://sspai.com/", description: "高品质数字消费指南" },
+                    { title: "利器", logo: "images/logos/liqi.png", url: "https://liqi.io/", description: "创造者和他们的工具" },
+                    { title: "Today", logo: "images/logos/today.png", url: "http://today.itjuzi.com/", description: "为身边的新产品喝彩" },
+                    { title: "小众软件", logo: "images/logos/appinn.png", url: "https://faxian.appinn.com/", description: "在这里发现更多有趣的应用" }
+                ]
+            }, {
+                term: "界面灵感",
+                links: [
+                    { title: "Pttrns", logo: "images/logos/Pttrns.png", url: "https://www.pttrns.com/", description: "Check out the finest collection of design patterns" },
+                    { title: "Collect UI", logo: "images/logos/CollectUI.png", url: "http://collectui.com/", description: "Daily inspiration collected from daily ui archive" },
+                    { title: "UI uigreat", logo: "images/logos/uiuigreat.png", url: "http://ui.uigreat.com/", description: "APP界面截图参考" },
+                    { title: "Android Niceties", logo: "images/logos/AndroidNiceties.png", url: "https://androidniceties.tumblr.com/", description: "A collection of screenshots of beautiful looking Android apps." }
+                ]
+            }, {
+                term: "网页灵感",
+                links: [
+                    { title: "Awwwards", logo: "images/logos/awwwards.png", url: "https://www.awwwards.com/", description: "Website Awards that recognize and promote the best developers" },
+                    { title: "CSS Design Awards", logo: "images/logos/CSSDesignAwards.png", url: "https://www.cssdesignawards.com/", description: "Website Awards & Inspiration - CSS Gallery" },
+                    { title: "The FWA", logo: "images/logos/fwa.png", url: "https://thefwa.com/", description: "FWA - showcasing innovation every day since 2000" },
+                    { title: "Ecommercefolio", logo: "images/logos/Ecommercefolio.png", url: "http://www.ecommercefolio.com/", description: "Only the Best Ecommerce Design Inspiration" },
+                    { title: "Lapa", logo: "images/logos/Lapa.png", url: "http://www.lapa.ninja/", description: "The best landing page design inspiration from around the web." },
+                    { title: "Reeoo", logo: "images/logos/reeoo.png", url: "http://reeoo.com/", description: "web design inspiration and website gallery" },
+                    { title: "Designmunk", logo: "images/logos/designmunk.png", url: "https://designmunk.com/", description: "Best Homepage Design Inspiration" },
+                    { title: "Best Websites Gallery", logo: "images/logos/BWG.png", url: "https://bestwebsite.gallery/", description: "Website Showcase Inspiration | Best Websites Gallery" },
+                    { title: "Pages", logo: "images/logos/pages.png", url: "http://www.pages.xyz/", description: "Curated directory of the best Pages" },
+                    { title: "SiteSee", logo: "images/logos/SiteSee.png", url: "https://sitesee.co/", description: "SiteSee is a curated gallery of beautiful, modern websites collections." },
+                    { title: "Site Inspire", logo: "images/logos/siteInspire.png", url: "https://www.siteinspire.com/", description: "A CSS gallery and showcase of the best web design inspiration." },
+                    { title: "WebInspiration", logo: "images/logos/WebInspiration.png", url: "http://web.uedna.com/", description: "网页设计欣赏,全球顶级网页设计" },
+                    { title: "navnav", logo: "images/logos/navnav.png", url: "https://navnav.co/", description: "A ton of CSS, jQuery, and JavaScript responsive navigation examples" },
+                    { title: "Really Good UX", logo: "images/logos/ReallyGoodUX.png", url: "https://www.reallygoodux.io/", description: "A library of screenshots and examples of really good UX." }
+                ]
+            }]
+        }, {
+            taxonomy: "素材资源",
+            icon: "fa-thumbs-up",
+            list: [{
+                term: "图标素材",
+                links: [
+                    { title: "Iconfinder", logo: "images/logos/Iconfinder.png", url: "https://www.iconfinder.com", description: "2,100,000+ free and premium vector icons." },
+                    { title: "iconfont", logo: "images/logos/iconfont.png", url: "http://www.iconfont.cn/", description: "阿里巴巴矢量图标库" },
+                    { title: "iconmonstr", logo: "images/logos/iconmonstr.png", url: "https://iconmonstr.com/", description: "Free simple icons for your next project" },
+                    { title: "Icon Archive", logo: "images/logos/iconarchive.png", url: "http://www.iconarchive.com/", description: "Search 590,912 free icons" },
+                    { title: "FindIcons", logo: "images/logos/FindIcons.png", url: "https://findicons.com/", description: "Search through 300,000 free icons" },
+                    { title: "IcoMoonApp", logo: "images/logos/IcoMoonApp.png", url: "https://icomoon.io/app/", description: "Icon Font, SVG, PDF & PNG Generator" },
+                    { title: "easyicon", logo: "images/logos/easyicon.png", url: "http://www.easyicon.net/", description: "PNG、ICO、ICNS格式图标搜索、图标下载服务" },
+                    { title: "flaticon", logo: "images/logos/flaticon.png", url: "https://www.flaticon.com/", description: "634,000+ Free vector icons in SVG, PSD, PNG, EPS format" },
+                    { title: "UICloud", logo: "images/logos/UICloud.png", url: "http://ui-cloud.com/", description: "The largest user interface design database in the world." },
+                    { title: "Material icons", logo: "images/logos/Materialicons.png", url: "https://material.io/icons/", description: "Access over 900 material system icons" },
+                    { title: "Font Awesome Icon", logo: "images/logos/fontawesomeicon.png", url: "https://fontawesome.com/icons/", description: "The complete set of 675 icons in Font Awesome" },
+                    { title: "ion icons", logo: "images/logos/ionicons.png", url: "http://ionicons.com/", description: "The premium icon font for Ionic Framework." },
+                    { title: "Simpleline Icons", logo: "images/logos/simplelineicons.png", url: "http://simplelineicons.com/", description: "Simple line Icons pack" }
+                ]
+            }, {
+                term: "LOGO设计",
+                links: [
+                    { title: "Iconsfeed", logo: "images/logos/iconsfeed.png", url: "http://www.iconsfeed.com/", description: "iOS icons gallery" },
+                    { title: "iOS Icon Gallery", logo: "images/logos/iosicongallery.png", url: "http://iosicongallery.com/", description: "Showcasing beautiful icon designs from the iOS App Store" },
+                    { title: "World Vector Logo", logo: "images/logos/worldvectorlogo.png", url: "https://worldvectorlogo.com/", description: "Brand logos free to download" },
+                    { title: "Instant Logo Search", logo: "images/logos/InstantLogoSearch.png", url: "http://instantlogosearch.com/", description: "Search & download thousands of logos instantly" }
+                ]
+            }, {
+                term: "平面素材",
+                links: [
+                    { title: "freepik", logo: "images/logos/freepik.png", url: "https://www.freepik.com/", description: "More than a million free vectors, PSD, photos and free icons." },
+                    { title: "wallhalla", logo: "images/logos/wallhalla.png", url: "https://wallhalla.com/", description: "Find awesome high quality wallpapers for desktop and mobile." },
+                    { title: "365PSD", logo: "images/logos/365PSD.png", url: "https://365psd.com/", description: "Free PSD & Graphics, Illustrations" },
+                    { title: "Medialoot", logo: "images/logos/Medialoot.png", url: "https://medialoot.com/", description: "Free & Premium Design Resources" },
+                    { title: "千图网", logo: "images/logos/qiantu.png", url: "http://www.58pic.com/", description: "专注免费设计素材下载的网站" },
+                    { title: "千库网", logo: "images/logos/qianku.png", url: "http://588ku.com/", description: "免费png图片背景素材下载" },
+                    { title: "我图网", logo: "images/logos/wotu.png", url: "http://www.ooopic.com/", description: "我图网,提供图片素材及模板下载,专注正版设计作品交易" },
+                    { title: "90设计", logo: "images/logos/90sheji.png", url: "http://90sheji.com/", description: "电商设计（淘宝美工）千图免费淘宝素材库" },
+                    { title: "昵图网", logo: "images/logos/nipic.png", url: "http://www.nipic.com/", description: "原创素材共享平台" },
+                    { title: "懒人图库", logo: "images/logos/lanrentuku.png", url: "http://www.lanrentuku.com/", description: "懒人图库专注于提供网页素材下载" },
+                    { title: "素材搜索", logo: "images/logos/sousucai.png", url: "http://so.ui001.com/", description: "设计素材搜索聚合" },
+                    { title: "PS饭团网", logo: "images/logos/psefan.png", url: "http://psefan.com/", description: "不一样的设计素材库！让自己的设计与众不同！" },
+                    { title: "素材中国", logo: "images/logos/sccnn.png", url: "http://www.sccnn.com/", description: "免费素材共享平台" }
+                ]
+            }, {
+                term: "UI资源",
+                links: [
+                    { title: "Freebiesbug", logo: "images/logos/freebiesbug.png", url: "https://freebiesbug.com/", description: "Hand-picked resources for web designer and developers" },
+                    { title: "Freebie Supply", logo: "images/logos/freebiesupply.png", url: "https://freebiesupply.com/", description: "Free Resources For Designers" },
+                    { title: "云瑞", logo: "images/logos/yrucd.png", url: "https://www.yrucd.com/", description: "优秀设计资源的分享网站" },
+                    { title: "Designmodo", logo: "images/logos/Designmodo.png", url: "https://designmodo.com/", description: "Web Design Blog and Shop" },
+                    { title: "稀土区", logo: "images/logos/xituqu.png", url: "https://xituqu.com/", description: "优质设计开发资源分享" },
+                    { title: "ui8", logo: "images/logos/ui8.png", url: "https://ui8.net/", description: "UI Kits, Wireframe Kits, Templates, Icons and More" },
+                    { title: "uplabs", logo: "images/logos/uplabs.png", url: "https://www.uplabs.com/", description: "Daily resources for product designers & developers" },
+                    { title: "UIkit.me", logo: "images/logos/uikitme.png", url: "http://www.uikit.me/", description: "最便捷新鲜的uikit资源下载网站" },
+                    { title: "Fribbble", logo: "images/logos/Fribbble.png", url: "http://www.fribbble.com/", description: "Free PSD files and other free design resources by Dribbblers." },
+                    { title: "PrincipleRepo", logo: "images/logos/PrincipleRepo.png", url: "http://principlerepo.com/", description: "Free, High Quality Principle Resources" }
+                ]
+            }, {
+                term: "Sketch资源",
+                links: [
+                    { title: "Sketch", logo: "images/logos/Sketch.png", url: "https://sketchapp.com/", description: "The digital design toolkit" },
+                    { title: "Sketch Measure", logo: "images/logos/SketchMeasure.png", url: "http://utom.design/measure/", description: "Friendly user interface offers you a more intuitive way of making marks." },
+                    { title: "Sketch App Sources", logo: "images/logos/sketchappsources.png", url: "https://www.sketchappsources.com/", description: "Free design resources and plugins - Icons, UI Kits, Wireframes" },
+                    { title: "Sketch.im", logo: "images/logos/sketchIm.png", url: "http://www.sketch.im/", description: "Sketch 相关资源汇聚" },
+                    { title: "Sketch Hunt", logo: "images/logos/sketchhunt.png", url: "http://sketchhunt.com/", description: "Sketch Hunt is an independent blog sharing gems in learning" },
+                    { title: "Sketch中文网", logo: "images/logos/sketchcn.png", url: "http://www.sketchcn.com/", description: "分享最新的Sketch中文手册" },
+                    { title: "Awesome Sketch Plugins", logo: "images/logos/AwesomeSketchPlugins.png", url: "https://awesome-sket.ch/", description: "A collection of really useful Sketch plugins." },
+                    { title: "Sketchcasts", logo: "images/logos/sketchcasts.png", url: "https://www.sketchcasts.net/", description: "Learn Sketch Train your design skills with a weekly video tutorial" }
+                ]
+            }, {
+                term: "字体资源",
+                links: [
+                    { title: "Google Font", logo: "images/logos/googlefont.png", url: "https://fonts.google.com/", description: "Making the web more beautiful, fast, and open through great typography" },
+                    { title: "Typekit", logo: "images/logos/typekit.png", url: "https://typekit.com/", description: "Quality fonts from the world's best foundries." },
+                    { title: "方正字库", logo: "images/logos/Fondertype.png", url: "http://www.foundertype.com/", description: "方正字库官方网站" },
+                    { title: "字体传奇网", logo: "images/logos/ziticq.png", url: "http://ziticq.com/", description: "中国首个字体品牌设计师交流网" },
+                    { title: "私藏字体", logo: "images/logos/sicangziti.png", url: "http://sicangziti.com/", description: "优质字体免费下载站" },
+                    { title: "Fontsquirrel", logo: "images/logos/fontsquirrel.png", url: "https://www.fontsquirrel.com/", description: "FREE fonts for graphic designers" },
+                    { title: "Urban Fonts", logo: "images/logos/UrbanFonts.png", url: "https://www.urbanfonts.com/", description: "Download Free Fonts and Free Dingbats." },
+                    { title: "Lost Type", logo: "images/logos/losttype.png", url: "http://www.losttype.com/", description: "Lost Type is a Collaborative Digital Type Foundry" },
+                    { title: "FONTS2U", logo: "images/logos/fonts2u.png", url: "https://fonts2u.com/", description: "Download free fonts for Windows and Macintosh." },
+                    { title: "Fontex", logo: "images/logos/fontex.png", url: "http://www.fontex.org/", description: "Free Fonts to Download + Premium Typefaces" },
+                    { title: "FontM", logo: "images/logos/FontM.png", url: "http://fontm.com/", description: "Free Fonts" },
+                    { title: "My Fonts", logo: "images/logos/MyFonts.png", url: "http://www.myfonts.com/", description: "Fonts for Print, Products & Screens" },
+                    { title: "Da Font", logo: "images/logos/dafont.png", url: "https://www.dafont.com/", description: "Archive of freely downloadable fonts." },
+                    { title: "OnlineWebFonts", logo: "images/logos/OnlineWebFonts.png", url: "https://www.onlinewebfonts.com/", description: "WEB Free Fonts for Windows and Mac" },
+                    { title: "Abstract Fonts", logo: "images/logos/abstractfonts.png", url: "http://www.abstractfonts.com/", description: "Abstract Fonts (13,866 free fonts)" }
+                ]
+            }, {
+                term: "Mockup",
+                links: [
+                    { title: "MockupZone", logo: "images/logos/MockupZone.png", url: "https://mockup.zone/", description: "Mockup Zone is an online store where you can find free and premium PSD mockup files" },
+                    { title: "Dunnnk", logo: "images/logos/Dunnnk.png", url: "http://dunnnk.com/", description: "Generate Product Mockups For Free" },
+                    { title: "Graphberry", logo: "images/logos/graphberry.png", url: "http://www.graphberry.com/", description: "Free design resources, Mockups, PSD web templates, Icons" },
+                    { title: "Threed", logo: "images/logos/threed.png", url: "http://threed.io/", description: "Generate 3D Mockups right in your Browser" },
+                    { title: "Mockup World", logo: "images/logos/mockupworld.png", url: "https://free.lstore.graphics/", description: "The best free Mockups from the Web" },
+                    { title: "Lstore", logo: "images/logos/lstore.png", url: "https://free.lstore.graphics/", description: "Exclusive mindblowing freebies for designers and developers" },
+                    { title: "pixeden", logo: "images/logos/pixeden.png", url: "https://www.pixeden.com/", description: "free web resources and graphic design templates." },
+                    { title: "For Graphic TM", logo: "images/logos/forgraphictm.png", url: "http://forgraphictm.com/", description: "High Quality PSD Mockups for Graphic Designers." }
+                ]
+            }, {
+                term: "摄影图库",
+                links: [
+                    { title: "Unsplash", logo: "images/logos/unsplash.png", url: "https://unsplash.com/", description: "Beautiful, free photos." },
+                    { title: "visualhunt", logo: "images/logos/visualhunt.png", url: "https://visualhunt.com/", description: "100% Free High Quality Photos" },
+                    { title: "librestock", logo: "images/logos/librestock.png", url: "https://librestock.com/", description: "65,084 high quality do-what-ever-you-want stock photos" },
+                    { title: "pixabay", logo: "images/logos/pixabay.png", url: "https://pixabay.com/", description: "可在任何地方使用的免费图片和视频" },
+                    { title: "SplitShire", logo: "images/logos/SplitShire.png", url: "https://www.splitshire.com/", description: "Free Stock Photos and Videos for commercial use." },
+                    { title: "StockSnap", logo: "images/logos/StockSnap.png", url: "https://stocksnap.io/", description: "Beautiful free stock photos" },
+                    { title: "albumarium", logo: "images/logos/albumarium.png", url: "http://albumarium.com/", description: "The best place to find & share beautiful images" },
+                    { title: "myphotopack", logo: "images/logos/myphotopack.png", url: "https://myphotopack.com/", description: "A free photo pack just for you. Every month." },
+                    { title: "Notaselfie", logo: "images/logos/notaselfie.png", url: "http://notaselfie.com/", description: "Photos that happen along the way. You can use the images anyway you like." },
+                    { title: "papers", logo: "images/logos/papers.png", url: "http://papers.co/", description: "Wallpapers Every Hour!Hand collected :)" },
+                    { title: "stokpic", logo: "images/logos/stokpic.png", url: "http://stokpic.com/", description: "Free Stock Photos For Commercial Use" },
+                    { title: "55mm", logo: "images/logos/55mm.png", url: "https://55mm.co/visuals", description: "Use our FREE photos to tell your story!" },
+                    { title: "thestocks", logo: "images/logos/thestocks.png", url: "http://thestocks.im/", description: "Use our FREE photos to tell your story!" },
+                    { title: "freenaturestock", logo: "images/logos/freenaturestock.png", url: "http://freenaturestock.com/", description: "Exclusive mindblowing freebies for designers and developers" },
+                    { title: "negativespace", logo: "images/logos/negativespace.png", url: "https://negativespace.co/", description: "Beautiful, High-Resolution Free Stock Photos" },
+                    { title: "gratisography", logo: "images/logos/gratisography.png", url: "https://gratisography.com/", description: "Free high-resolution pictures you can use on your personal and commercial projects" },
+                    { title: "imcreator", logo: "images/logos/imcreator.png", url: "http://imcreator.com/free", description: "A curated collection of free web design resources" },
+                    { title: "lifeofpix", logo: "images/logos/lifeofpix.png", url: "http://www.lifeofpix.com/", description: "Free high resolution photography" },
+                    { title: "skitterphoto", logo: "images/logos/skitterphoto.png", url: "https://skitterphoto.com/", description: "Free Stock Photos for Creative Professionals" },
+                    { title: "mmtstock", logo: "images/logos/mmtstock.png", url: "https://mmtstock.com/", description: "Free photos for commercial use" },
+                    { title: "magdeleine", logo: "images/logos/magdeleine.png", url: "https://magdeleine.co/browse/", description: "HAND-PICKED FREE PHOTOS FOR YOUR INSPIRATION" },
+                    { title: "jeshoots", logo: "images/logos/jeshoots.png", url: "http://jeshoots.com/", description: "New Free Photos & Mockups in to your Inbox!" },
+                    { title: "hdwallpapers", logo: "images/logos/hdwallpapers.png", url: "https://www.hdwallpapers.net", description: "High Definition Wallpapers & Desktop Backgrounds" },
+                    { title: "publicdomainarchive", logo: "images/logos/publicdomainarchive.png", url: "http://publicdomainarchive.com/", description: "New 100% Free Stock Photos. Every. Single. Week." }
+                ]
+            }, {
+                term: "PPT资源",
+                links: [
+                    { title: "OfficePLUS", logo: "images/logos/officeplus.png", url: "http://www.officeplus.cn/Template/Home.shtml", description: "OfficePLUS，微软Office官方在线模板网站！" },
+                    { title: "优品PPT", logo: "images/logos/ypppt.png", url: "http://www.ypppt.com/", description: "高质量的模版，而且还有PPT图表，PPT背景图等资源" },
+                    { title: "PPT+", logo: "images/logos/pptplus.png", url: "http://www.pptplus.cn/", description: "PPT加直播、录制和分享—PPT+语音内容分享平台" },
+                    { title: "PPTMind", logo: "images/logos/pptmind.png", url: "http://www.pptmind.com/", description: "分享高端ppt模板与keynote模板的数字作品交易平台" },
+                    { title: "tretars", logo: "images/logos/tretars.png", url: "http://www.tretars.com/ppt-templates", description: "The best free Mockups from the Web" },
+                    { title: "5百丁", logo: "images/logos/500d.png", url: "http://ppt.500d.me/", description: "中国领先的PPT模板共享平台" }
+                ]
+            }]
+        }, {
+            taxonomy: "常用工具",
+            icon: "fa-palette",
+            list: [{
+                term: "图形创意",
+                links: [
+                    { title: "photoshop", logo: "images/logos/photoshop.png", url: "https://www.adobe.com/cn/products/photoshop.html", description: "Photoshop不需要解释" },
+                    { title: "Affinity Designer", logo: "images/logos/AffinityDesigner.png", url: "https://affinity.serif.com/", description: "专业创意软件" },
+                    { title: "Illustrator", logo: "images/logos/Illustrator.png", url: "https://www.adobe.com/cn/products/illustrator/", description: "矢量图形和插图。" },
+                    { title: "indesign", logo: "images/logos/INDESIGN .png", url: "http://www.adobe.com/cn/products/indesign.html", description: "页面设计、布局和出版。" },
+                    { title: "cinema-4d", logo: "images/logos/cinema4d.png", url: "https://www.maxon.net/en/products/cinema-4d/overview/", description: "Cinema 4D is the perfect package for all 3D artists" },
+                    { title: "3ds-max", logo: "images/logos/3dsmax.png", url: "https://www.autodesk.com/products/3ds-max/overview", description: "3D modeling, animation, and rendering software" },
+                    { title: "Blender", logo: "images/logos/blender.png", url: "https://www.blender.org/", description: "Blender is the free and open source 3D creation suite." }
+                ]
+            }, {
+                term: "界面设计",
+                links: [
+                    { title: "Sketch", logo: "images/logos/sketchapp.png", url: "https://sketchapp.com/", description: "The digital design toolkit" },
+                    { title: "Adobe XD", logo: "images/logos/ADOBEXDCC.png", url: "http://www.adobe.com/products/xd.html", description: "Introducing Adobe XD. Design. Prototype. Experience." },
+                    { title: "invisionapp", logo: "images/logos/invisionapp.png", url: "https://www.invisionapp.com/", description: "Powerful design prototyping tools" },
+                    { title: "marvelapp", logo: "images/logos/marvelapp.png", url: "https://marvelapp.com/", description: "Simple design, prototyping and collaboration" },
+                    { title: "Muse CC", logo: "images/logos/MuseCC.png", url: "https://creative.adobe.com/zh-cn/products/download/muse", description: "无需利用编码即可进行网站设计。" },
+                    { title: "figma", logo: "images/logos/figma.png", url: "https://www.figma.com/", description: "Design, prototype, and gather feedback all in one place with Figma." }
+                ]
+            }, {
+                term: "交互动效",
+                links: [
+                    { title: "Adobe After Effects CC", logo: "images/logos/AdobeAfterEffectsCC.png", url: "https://www.adobe.com/cn/products/aftereffects/", description: "电影般的视觉效果和动态图形。" },
+                    { title: "principle", logo: "images/logos/principle.png", url: "http://principleformac.com/", description: "Animate Your Ideas, Design Better Apps" },
+                    { title: "flinto", logo: "images/logos/flinto.png", url: "https://www.flinto.com/", description: "Flinto is a Mac app used by top designers around the world" },
+                    { title: "framer", logo: "images/logos/framer.png", url: "https://framer.com/", description: "Design everything from detailed icons to high-fidelity interactions" },
+                    { title: "ProtoPie", logo: "images/logos/protopie.png", url: "http://www.protopie.cn/", description: "高保真交互原型设计" }
+                ]
+            }, {
+                term: "在线配色",
+                links: [
+                    { title: "khroma", logo: "images/logos/khroma.png", url: "http://khroma.co/generator/", description: "Khroma is the fastest way to discover, search, and save color combos" },
+                    { title: "uigradients", logo: "images/logos/uigradients.png", url: "https://uigradients.com", description: "Beautiful colored gradients" },
+                    { title: "gradients", logo: "images/logos/gradients.png", url: "http://gradients.io/", description: "Curated gradients for designers and developers" },
+                    { title: "Coolest", logo: "images/logos/Coolest.png", url: "https://webkul.github.io/coolhue/", description: "Coolest handpicked Gradient Hues for your next super amazing stuff" },
+                    { title: "webgradients", logo: "images/logos/webgradients.png", url: "https://webgradients.com/", description: "WebGradients is a free collection of 180 linear gradients" },
+                    { title: "grabient", logo: "images/logos/grabient.png", url: "https://www.grabient.com/", description: "2017 Grabient by unfold" },
+                    { title: "thedayscolor", logo: "images/logos/thedayscolor.png", url: "http://www.thedayscolor.com/", description: "The daily color digest" },
+                    { title: "flatuicolors", logo: "images/logos/flatuicolors.png", url: "http://flatuicolors.com/", description: "Copy Paste Color Pallette from Flat UI Theme" },
+                    { title: "coolors", logo: "images/logos/coolors.png", url: "https://coolors.co/", description: "The super fast color schemes generator!" },
+                    { title: "colorhunt", logo: "images/logos/colorhunt.png", url: "http://www.colorhunt.co/", description: "Beautiful Color Palettes" },
+                    { title: "Adobe Color CC", logo: "images/logos/AdobeColorCC.png", url: "https://color.adobe.com/zh/create/color-wheel", description: "Create color schemes with the color wheel" },
+                    { title: "flatuicolorpicker", logo: "images/logos/flatuicolorpicker.png", url: "http://www.flatuicolorpicker.com/", description: "Best Flat Colors For UI Design" },
+                    { title: "trianglify", logo: "images/logos/trianglify.png", url: "http://qrohlf.com/trianglify-generator/", description: "Trianglify Generator" },
+                    { title: "klart", logo: "images/logos/klart.png", url: "https://klart.co/colors/", description: "Beautiful colors and designs to your inbox every week" },
+                    { title: "vanschneider", logo: "images/logos/vanschneider.png", url: "http://www.vanschneider.com/colors", description: "Color Claim was created in 2012 by Tobias van Schneider" }
+                ]
+            }, {
+                term: "在线工具",
+                links: [
+                    { title: "tinypng", logo: "images/logos/tinypng.png", url: "https://tinypng.com/", description: "Optimize your images with a perfect balance in quality and file size." },
+                    { title: "goqr", logo: "images/logos/goqr.png", url: "http://goqr.me/", description: "create QR codes for free (Logo, T-Shirt, vCard, EPS)" },
+                    { title: "ezgif", logo: "images/logos/ezgif.png", url: "https://ezgif.com", description: "simple online GIF maker and toolset for basic animated GIF editing." },
+                    { title: "Android 9 patch", logo: "images/logos/Android9patch.png", url: "http://inloop.github.io/shadow4android/", description: "Android 9-patch shadow generator fully customizable shadows" },
+                    { title: "screen sizes", logo: "images/logos/screensizes.png", url: "http://screensiz.es/", description: "Viewport Sizes and Pixel Densities for Popular Devices" },
+                    { title: "svgomg", logo: "images/logos/svgomg.png", url: "https://jakearchibald.github.io/svgomg/", description: "SVG在线压缩平台" },
+                    { title: "稿定抠图", logo: "images/logos/gaoding.png", url: "https://www.gaoding.com", description: "免费在线抠图软件,图片快速换背景-抠白底图" }
+                ]
+            }, {
+                term: "Chrome插件",
+                links: [
+                    { title: "wappalyzer", logo: "images/logos/wappalyzer.png", url: "https://www.wappalyzer.com/", description: "Identify technology on websites" },
+                    { title: "Panda", logo: "images/logos/usepanda.png", url: "http://usepanda.com/", description: "A smart news reader built for productivity." },
+                    { title: "sizzy", logo: "images/logos/sizzy.png", url: "https://sizzy.co/", description: "A tool for developing responsive websites crazy-fast" },
+                    { title: "csspeeper", logo: "images/logos/csspeeper.png", url: "https://csspeeper.com/", description: "Smart CSS viewer tailored for Designers." },
+                    { title: "insight", logo: "images/logos/insight.png", url: "http://insight.io/", description: "IDE-like code search and navigation, on the cloud" },
+                    { title: "mustsee", logo: "images/logos/mustsee.png", url: "http://mustsee.earth/", description: "Discover the world's most beautiful places at every opened tab." }
+                ]
+            }]
+        }, {
+            taxonomy: "学习教程",
+            icon: "fa-regular fa-folder-open",
+            list: [{
+                term: "设计规范",
+                links: [
+                    { title: "Design Guidelines", logo: "images/logos/designguidelines.png", url: "http://designguidelines.co/", description: "Design Guidelines — The way products are built." },
+                    { title: "Awesome design systems", logo: "images/logos/awesome_design_systems.png", url: "https://github.com/alexpate/awesome-design-systems", description: "A collection of awesome design systems" },
+                    { title: "Material Design", logo: "images/logos/Material_Design.png", url: "https://material.io/guidelines/", description: "Introduction - Material Design" },
+                    { title: "Human Interface Guidelines", logo: "images/logos/human_interface_guidelines.png", url: "https://developer.apple.com/ios/human-interface-guidelines", description: "Human Interface Guidelines iOS" },
+                    { title: "Photoshop Etiquette", logo: "images/logos/photoshopetiquette.png", url: "http://viggoz.com/photoshopetiquette/", description: "PS礼仪-WEB设计指南" }
+                ]
+            }, {
+                term: "视频教程",
+                links: [
+                    { title: "Photoshop Lady", logo: "images/logos/PhotoshopLady.png", url: "http://www.photoshoplady.com/", description: "Your Favourite Photoshop Tutorials in One Place" },
+                    { title: "doyoudo", logo: "images/logos/doyoudo.png", url: "http://doyoudo.com/", description: "创意设计软件学习平台" },
+                    { title: "没位道", logo: "images/logos/web_ui_tutorial.png", url: "http://www.c945.com/web-ui-tutorial/", description: "WEB UI免费视频公开课" },
+                    { title: "慕课网", logo: "images/logos/imooc.png", url: "https://www.imooc.com/", description: "程序员的梦工厂（有UI课程）" }
+                ]
+            }, {
+                term: "设计文章",
+                links: [
+                    { title: "优设网", logo: "images/logos/uisdc.png", url: "http://www.uisdc.com/", description: "设计师交流学习平台" },
+                    { title: "Web Design Ledger", logo: "images/logos/webdesignledger.png", url: "https://webdesignledger.com", description: "Web Design Blog" },
+                    { title: "Medium", logo: "images/logos/medium.png", url: "https://medium.com/", description: "Read, write and share stories that matter" }
+                ]
+            }, {
+                term: "设计电台",
+                links: [
+                    { title: "UX Coffee", logo: "images/logos/uxcoffee.png", url: "http://uxcoffee.co/", description: "《UX Coffee 设计咖》是一档关于用户体验的播客节目。" },
+                    { title: "Anyway.FM", logo: "images/logos/anyway.png", url: "https://anyway.fm/", description: "设计杂谈 • UI 设计师 JJ 和 Leon 主播的设计播客" },
+                    { title: "异能电台", logo: "images/logos/yineng.png", url: "https://www.yineng.fm", description: "将全宇宙设计师的故事讲给你听。" }
+                ]
+            }, {
+                term: "交互设计",
+                links: [
+                    { title: "Little Big Details", logo: "images/logos/littlebigdetails.png", url: "http://littlebigdetails.com/", description: "Little Big Details is a curated collection of the finer details of design" },
+                    { title: "Smashing Magazine", logo: "images/logos/smashingmagazine.png", url: "https://www.smashingmagazine.com/category/user-experience", description: "Below you'll find the best tips to take your UX design process to the next level." },
+                    { title: "nngroup", logo: "images/logos/nngroup.png", url: "https://www.nngroup.com/articles/", description: "Evidence-Based User Experience Research, Training, and Consulting" },
+                    { title: "Boxes and Arrows", logo: "images/logos/boxesandarrows.png", url: "http://boxesandarrows.com/", description: "Boxes and Arrows is devoted to the practice, innovation, and discussion of design" },
+                    { title: "UX Design Weekly", logo: "images/logos/uxdesignweekly.png", url: "http://uxdesignweekly.com/", description: "get a hand picked list of the best user experience design links every week." },
+                    { title: "UX Ren", logo: "images/logos/uxren.png", url: "http://uxren.cn/", description: "用户体验人的专业社区" }
+                ]
+            }]
+        }, {
+            taxonomy: "UED团队",
+            icon: "fa-user-group",
+            links: [
+                { title: "Airbnb Design", logo: "images/logos/AirbnbDesign.png", url: "https://airbnb.design", description: "Airbnb Design" },
+                { title: "Facebook Design", logo: "images/logos/FacebookDesign.png", url: "http://facebook.design/", description: "Facebook Design" },
+                { title: "Google Design", logo: "images/logos/GoogleDesign.png", url: "https://design.google/", description: "Google Design" },
+                { title: "eico design", logo: "images/logos/eico.png", url: "http://eicodesign.com/", description: "数字化咨询与产品专家" },
+                { title: "nice design", logo: "images/logos/niceui.png", url: "http://www.niceui.cn/", description: "nicedesign奈思设计是领先的用户体验设计与互联网品牌建设公司" },
+                { title: "腾讯CDC", logo: "images/logos/cdc.png", url: "http://cdc.tencent.com/", description: "腾讯CDC关注于互联网视觉设计、交互设计、用户研究、前端开发。" },
+                { title: "TGideas", logo: "images/logos/tgideas.png", url: "http://tgideas.qq.com/", description: "TGideas隶属于腾讯公司互动娱乐业务系统的专业推广类设计团队" },
+                { title: "ISUX", logo: "images/logos/isux.png", url: "https://isux.tencent.com/", description: "腾讯社交用户体验设计部" },
+                { title: "MXD", logo: "images/logos/mxd.png", url: "http://mxd.tencent.com/", description: "腾讯MIG无线互联网事业群设计团队" },
+                { title: "Aliued", logo: "images/logos/aliued.png", url: "http://www.aliued.com/", description: "阿里巴巴国际UED团队" },
+                { title: "U一点", logo: "images/logos/aliuedcn.png", url: "http://www.aliued.cn/", description: "阿里巴巴（中国站）用户体验设计部博客U一点设计 UED团队" },
+                { title: "网易uedc", logo: "images/logos/uedc.png", url: "http://uedc.163.com/", description: "网易用户体验设计中心（User Experience Design Center）" },
+                { title: "百度用户体验中心", logo: "images/logos/uedbaidu.png", url: "http://ued.baidu.com/", description: "百度用户体验中心" },
+                { title: "京东设计中心", logo: "images/logos/JDC.png", url: "http://jdc.jd.com/", description: "京东设计中心" },
+                { title: "百度企业产品用户体验中心", logo: "images/logos/euxbaidu.png", url: "http://eux.baidu.com/", description: "百度企业产品用户体验中心" },
+                { title: "携程设计委员会", logo: "images/logos/ctrip.png", url: "http://ued.ctrip.com/", description: "携程设计委员会-Ctrip Design Committee" }
+            ]
+        }, {
+            taxonomy: "友情链接",
+            icon: "fa-link",
+            friend: [
+                { title: "子页面一", logo: "", url: "sub1", description: "本站子页面1" },
+                { title: "子页面二", logo: "", url: "sub2", description: "本站子页面2" },
+                { title: "webstack.cc", logo: "", url: "https://webstack.cc", description: "webstack - 设计师网址导航" },
+                { title: "一为导航", logo: "", url: "https://nav.iowen.cn/", description: "onenav主题演示站" },
+                { title: "趣导航", logo: "", url: "https://qssily.com/", description: "" },
+                { title: "404导航", logo: "", url: "https://www.404dh.icu/", description: "只导航优质资源" },
+                { title: "OPENI", logo: "", url: "https://openi.cn/", description: "" },
+                { title: "飞猪ai导航", logo: "", url: "https://feizhuke.com/", description: "AI工具集箱" },
+                { title: "bioit导航", logo: "", url: "https://www.bioit.top/", description: "" },
+                { title: "所长导航", logo: "", url: "https://liutongxu.github.io/", description: "" },
+                { title: "一为webstack", logo: "", url: "https://webstack.iotheme.cn/", description: "" },
+                { title: "iplaycode", logo: "", url: "https://iplaycode.github.io/nav/", description: "iplaycode的demo导航网站" }
+            ]
+        }];
+
+        // ================================================================
+        //  2. 渲染引擎
+        // ================================================================
+
+        // 获取链接列表（兼容 links / friend / list）
+        function getLinksForCategory(cat) {
+            if (cat.links) return cat.links;
+            if (cat.friend) return cat.friend;
+            if (cat.list) {
+                // 有 list：展平所有子分组的链接
+                const all = [];
+                cat.list.forEach(group => {
+                    if (group.links) {
+                        group.links.forEach(link => {
+                            all.push({ ...link, _group: group.term });
+                        });
+                    }
+                });
+                return all;
+            }
+            return [];
+        }
+
+        // 判断是否有分组（list）
+        function hasGroups(cat) {
+            return !!cat.list && Array.isArray(cat.list) && cat.list.length > 0;
+        }
+
+        // 获取分组数据
+        function getGroups(cat) {
+            return cat.list || [];
+        }
+
+        // 生成图标 HTML
+        function renderIcon(link, defaultIcon) {
+            const logo = link.logo || '';
+            // 如果有 logo 且不是空字符串，尝试显示图片
+            if (logo && logo.trim() !== '') {
+                // 如果是 http 或 https 开头，或者以 images/ 开头，认为是图片
+                if (logo.match(/^https?:\/\//i) || logo.match(/^images\//i)) {
+                    return `<img class="link-icon" src="${logo}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="icon-placeholder" style="display:none;">${link.title.charAt(0).toUpperCase()}</div>`;
+                }
+                // 否则可能是图标类名？但数据中 logo 基本都是图片路径
+                return `<img class="link-icon" src="${logo}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="icon-placeholder" style="display:none;">${link.title.charAt(0).toUpperCase()}</div>`;
+            }
+            // 没有 logo：使用首字母
+            return `<div class="icon-placeholder">${link.title.charAt(0).toUpperCase()}</div>`;
+        }
+
+        // 渲染卡片网格（从链接数组）
+        function renderCardGrid(links, container) {
+            if (!links || links.length === 0) {
+                container.innerHTML = `<div class="empty-state"><i class="fas fa-inbox"></i>该分类暂无链接</div>`;
+                return;
+            }
+
+            let html = '<div class="card-grid">';
+            links.forEach((link, index) => {
+                const delay = Math.min(index * 0.025, 0.4).toFixed(3);
+                const iconHtml = renderIcon(link);
+                const descHtml = link.description ?
+                    `<div class="link-desc">${link.description}</div>` :
+                    '';
+                html += `
+                    <div class="link-item" style="animation-delay:${delay}s;">
+                        <a href="${link.url}" target="_blank" title="${link.description || link.title}">
+                            ${iconHtml}
+                            <span class="link-text">${link.title}</span>
+                            ${descHtml}
+                        </a>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        // 渲染分类内容（支持分组和普通列表）
+        function renderCategory(categoryKey) {
+            const container = document.getElementById('mainContainer');
+            const cat = NAV_DATA.find(c => c.taxonomy === categoryKey);
+            if (!cat) {
+                container.innerHTML = `<div class="empty-state"><i class="fas fa-exclamation-triangle"></i>分类 "${categoryKey}" 不存在</div>`;
+                return;
+            }
+
+            // 情况1：有 list（分组）
+            if (hasGroups(cat)) {
+                const groups = getGroups(cat);
+                let html = '';
+                groups.forEach((group, gi) => {
+                    const links = group.links || [];
+                    if (links.length === 0) return;
+                    // 分组标题
+                    const termIcon = group.termIcon || 'fa-folder';
+                    html += `
+                        <div class="group-title">
+                            <i class="fas ${termIcon}"></i> ${group.term}
+                        </div>
+                        <div class="card-grid">
+                    `;
+                    links.forEach((link, idx) => {
+                        const delay = Math.min((gi * 0.1 + idx * 0.025), 0.5).toFixed(3);
+                        const iconHtml = renderIcon(link);
+                        const descHtml = link.description ?
+                            `<div class="link-desc">${link.description}</div>` :
+                            '';
+                        html += `
+                            <div class="link-item" style="animation-delay:${delay}s;">
+                                <a href="${link.url}" target="_blank" title="${link.description || link.title}">
+                                    ${iconHtml}
+                                    <span class="link-text">${link.title}</span>
+                                    ${descHtml}
+                                </a>
+                            </div>
+                        `;
+                    });
+                    html += '</div>';
+                });
+                container.innerHTML = html || `<div class="empty-state"><i class="fas fa-inbox"></i>该分类暂无链接</div>`;
+                return;
+            }
+
+            // 情况2：直接有 links 或 friend
+            const links = getLinksForCategory(cat);
+            renderCardGrid(links, container);
+        }
+
+        // ================================================================
+        //  3. 导航切换
+        // ================================================================
+
+        function buildNav() {
+            const navList = document.getElementById('navList');
+            let html = '';
+            NAV_DATA.forEach((cat, idx) => {
+                const active = idx === 0 ? 'active' : '';
+                html += `<li><a href="#" class="${active}" data-taxonomy="${cat.taxonomy}">${cat.taxonomy}</a></li>`;
+            });
+            navList.innerHTML = html;
+
+            // 绑定点击事件
+            navList.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tax = this.dataset.taxonomy;
+                    // 更新 active
+                    navList.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                    // 渲染
+                    renderCategory(tax);
+                });
+            });
+        }
+
+        // ================================================================
+        //  4. 搜索引擎切换 & 搜索功能
+        // ================================================================
+
+        function setupSearch() {
+            const engineBtns = document.querySelectorAll('#searchEngines button');
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+            let currentEngine = 'Google';
+
+            engineBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    engineBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentEngine = this.textContent.trim();
+                    searchInput.placeholder = `${currentEngine} 搜索...`;
+                });
+            });
+
+            function doSearch() {
+                const query = searchInput.value.trim();
+                if (!query) return;
+                let url = '';
+                const q = encodeURIComponent(query);
+                switch (currentEngine) {
+                    case 'Google':
+                        url = `https://www.google.com/search?q=${q}`;
+                        break;
+                    case '百度':
+                        url = `https://www.baidu.com/s?wd=${q}`;
+                        break;
+                    case 'Bing':
+                        url = `https://www.bing.com/search?q=${q}`;
+                        break;
+                    case 'GitHub':
+                        url = `https://github.com/search?q=${q}`;
+                        break;
+                    default:
+                        url = `https://www.google.com/search?q=${q}`;
+                }
+                window.open(url, '_blank');
+            }
+
+            searchBtn.addEventListener('click', doSearch);
+            searchInput.addEventListener('keydown', e => {
+                if (e.key === 'Enter') doSearch();
+            });
+        }
+
+        // ================================================================
+        //  5. 初始化
+        // ================================================================
+
+        function init() {
+            buildNav();
+            // 默认渲染第一个分类
+            if (NAV_DATA.length > 0) {
+                renderCategory(NAV_DATA[0].taxonomy);
+            }
+            setupSearch();
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+
+</body>
+</html>
